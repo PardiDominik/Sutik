@@ -1,41 +1,119 @@
 @font-face {
-    font-family: sajattipus ;
+    font-family: sajattipus;
     src: url("/Schoolbell-Regular.ttf");
 }
 
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sajattipus, sans-serif;
 }
-body{
-   background-image: url("képek/background.png");
-   min-height: 100vh;
-   min-width: 100vw;
-   padding-inline: 32px;
-   padding-block: 64px;
-   
-   
+
+body {
+    background-image: url("képek/background.png");
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-inline: 32px;
+    padding-block: 64px;
 
 }
-main{
-    max-width:90vw;
+
+main {
+    max-width: 90vw;
     max-height: calc(100vh - 128px);
     position: center;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 0 16px rgba(0,0,0,0.25);
-    
+    border: 3px solid black;
+    padding-inline: 5rem;
+
 }
-li{
-    list-style-type: none;
-    display: inline;
-    
-    padding: 16px;
+
+li {
+    grid-area: nav;
+    display: inline-block;
+    list-style: none;
+    color: #8d5b1a;
     background-color: #feda70;
-    color:  #8d5b1a;
-    border-radius: 8px;
+    font-size: 20px;
+    padding: 0.5rem;
+    border-radius: 12px;
+    border: 3px solid black;
+
+
+}
+
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    max-width: 1080px;
+    background-color: #feda70;
+    color: #8d5b1a;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 24px;
+    max-width: 60ch;
+    font-weight: 400;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nav"
+        "rizsa"
+        "Táblázat"
+        "footer";
+    padding: 32px;
+
+}
+
+.rizsa {
+    grid-area: rizsa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "tartalom kep";
+    text-align: left;
+}
+
+.kep {
+
+    grid-area: kep;
+    width: 45%;
+    height: 550px;
+    object-fit: cover;
+
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.tartalom {
+    /* display: grid; */
+    grid-area: tartalom;
+    height: fit-content;
+    max-width: 1080px;
+    margin: auto;
+}
+table {
+    grid: Táblázat;
+    max-width: 1080px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
 }
