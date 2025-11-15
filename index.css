@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-image: url("képek/background.png");
+   min-height: 100vh;
+   min-width: 100vw;
+   padding-inline: 32px;
+   padding-block: 64px;
+
+}
+main{
+    max-width:90vw;
+    max-height: calc(100vh - 128px);
+    position: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.25);
+    
+}
+li{
+    list-style-type: none;
+    display: inline;
+    
+    padding: 16px;
+    background-color: #feda70;
+    color:  #8d5b1a;
+    border-radius: 8px;
+}
