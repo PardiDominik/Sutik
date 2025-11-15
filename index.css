@@ -1,7 +1,15 @@
+@font-face {
+    font-family: sajattipus ;
+    src: url("/Schoolbell-Regular.ttf");
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sajattipus, sans-serif;
 }
 body{
    background-image: url("képek/background.png");
@@ -9,6 +17,8 @@ body{
    min-width: 100vw;
    padding-inline: 32px;
    padding-block: 64px;
+   
+   
 
 }
 main{
